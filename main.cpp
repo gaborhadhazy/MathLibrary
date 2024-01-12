@@ -1,7 +1,7 @@
 #include <iostream>
 #include "./Include/Math.h"
 int main() {
-    Math::Test t1;
-    t1.printout();
-
+    Math::BaseMath t1;
+    int lcm = t1.GCD(2, 2, 10);
+    std::cout << "lmc: " << lcm << '\n';
 }

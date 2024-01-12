@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(untitled6 main.cpp
         Include/Math.h
-        src/Algebra/Test.cpp
-        src/Algebra/Test.cpp)
+        src/BaseMath.cpp
+        src/BaseMath.cpp)
