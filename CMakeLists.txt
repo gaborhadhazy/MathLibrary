@@ -1,9 +1,13 @@
-cmake_minimum_required(VERSION 3.27)
-project(untitled6)
+cmake_minimum_required(VERSION 3.22)
+project(dadoy)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(untitled6 main.cpp
+add_executable(dadoy main.cc
         Include/Math.h
-        src/BaseMath.cpp
-        src/BaseMath.cpp)
+        src/BaseMath.cc
+        src/BaseMath.cc
+        src/LinearEquation.cc
+        src/utils/Lexer.cc
+
+        )
