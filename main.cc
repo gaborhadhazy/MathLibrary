@@ -1,6 +1,6 @@
 #include <iostream>
 #include "./Include/Math.h"
-#include "src/utils/Lexer.cc"
+#include "./Include/utils/Lexer.h"
 
 int main() {
     std::string input = "sin(123)";

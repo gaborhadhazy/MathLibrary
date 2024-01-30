@@ -9,5 +9,6 @@ add_executable(dadoy main.cc
         src/BaseMath.cc
         src/LinearEquation.cc
         src/utils/Lexer.cc
+        Include/utils/Lexer.h
 
         )

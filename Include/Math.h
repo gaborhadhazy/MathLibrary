@@ -1,5 +1,4 @@
 #include <iostream>
-
 // Math.h
 #ifndef UNTITLED6_MATH_H
 #define UNTITLED6_MATH_H
@@ -30,6 +29,7 @@ namespace Math {
         TLinearEquation equation;
         LinearEquation(std::string equation) {
             equation_string = equation;
+
         };
         TLinearEquation solve();
     };
