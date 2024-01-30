@@ -45,11 +45,14 @@ public:
     std::string input;
     int cursor;
     Lexer(std::string input);
+    std::vector<Token> tokens;
     
     bool hasMoreTokens();
     std::string match(const std::regex& regex, const std::string& inputSlice);
     std::vector<Token> getAllTokens();
     std::string print_token(TokenTypes token);
+
+    void print_all_tokens();
 };
 
 #endif // LEXER_H

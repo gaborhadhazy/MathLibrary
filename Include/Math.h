@@ -1,4 +1,5 @@
 #include <iostream>
+#include "utils/Lexer.h"
 // Math.h
 #ifndef UNTITLED6_MATH_H
 #define UNTITLED6_MATH_H
@@ -25,12 +26,11 @@ namespace Math {
 
     class LinearEquation {
         public:
+        Lexer lexer;
         std::string equation_string;
         TLinearEquation equation;
-        LinearEquation(std::string equation) {
-            equation_string = equation;
-
-        };
+        std::vector<Token> tokens; 
+        LinearEquation(std::string equation);
         TLinearEquation solve();
     };
 }

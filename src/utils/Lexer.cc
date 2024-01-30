@@ -21,7 +21,6 @@ std::string Lexer::match(const std::regex& regex, const std::string& inputSlice)
 }
 
 std::vector<Token> Lexer::getAllTokens() {
-    std::vector<Token> tokens;
 
     while (hasMoreTokens()) {
         bool tokenFound = false;
@@ -61,4 +60,12 @@ std::string Lexer::print_token(TokenTypes token) {
 
     auto it = tokenToString.find(token);
     return (it != tokenToString.end()) ? it->second : "UNKNOWN";
+}
+
+void Lexer::print_all_tokens() {
+    for (const Token& token : tokens) {
+        std::cout << "[";
+        std::cout << print_token(token.type) << ", '" << token.value << "'";
+        std::cout << "]" << '\n';
+    }
 }
